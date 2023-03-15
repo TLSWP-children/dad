@@ -8,8 +8,7 @@ import TelegramAuthContext from '../contexts/AuthTelegram'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  // const data = useContext(TelegramAuthContext);
-  // console.log(data);
+  const data = useContext(TelegramAuthContext);
   return (
     <>
       <Head>
@@ -25,6 +24,7 @@ export default function Home() {
             <code className={styles.code}>pages/index.js</code>
           </p>
           <div>
+            {JSON.stringify(data)}
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
