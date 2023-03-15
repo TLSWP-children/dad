@@ -25,6 +25,8 @@ export default function AuthTelegramProvider({ children }) {
       user: tg.initDataUnsafe?.user,
       queryId: tg.initDataUnsafe?.query_id,
     });
+
+    console.log(tg.sendData(tg.initDataUnsafe?.user || {}));
   }, []);
   return <TelegramAuthContext.Provider value={value}>{children}</TelegramAuthContext.Provider>;
 }
