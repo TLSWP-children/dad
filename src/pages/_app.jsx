@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import AuthTelegramProvider from './providers/AuthTelegram';
+import AuthTelegramProvider from '../providers/AuthTelegram';
 
 export default function App({ Component, pageProps }) {
   return (

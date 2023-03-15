@@ -3,13 +3,13 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useContext } from 'react'
-import TelegramAuthContext from './contexts/AuthTelegram'
+import TelegramAuthContext from '../contexts/AuthTelegram'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const data = useContext(TelegramAuthContext);
-  console.log(data);
+  // const data = useContext(TelegramAuthContext);
+  // console.log(data);
   return (
     <>
       <Head>
